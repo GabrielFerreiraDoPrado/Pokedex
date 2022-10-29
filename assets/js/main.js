@@ -38,11 +38,10 @@ function convertPokemonToLi(pokemon) {
                     </ol>
                     <img src="${pokemon.photo}" 
                         alt="${pokemon.name}">
-                </div>
-                
+                </div>   
             </li>
             `;
-    }
+}
 
 function loadPokemonItems(offset, limit) {
     
@@ -90,7 +89,6 @@ gen1.addEventListener('click',() => {
     offset = 0;
     maxRecords = 151;
     reloadPokemonItems(offset, limit);
-    loadMoreButton.parentElement.appendChild(loadMoreButton);
     }
 });
 
@@ -101,7 +99,6 @@ gen2.addEventListener('click',() => {
     offset = 151;
     maxRecords = 251;
     reloadPokemonItems(offset, limit);
-    loadMoreButton.parentElement.appendChild(loadMoreButton);
     }
 });
 
@@ -112,7 +109,6 @@ gen3.addEventListener('click',() => {
     offset = 251;
     maxRecords = 386;
     reloadPokemonItems(offset, limit);
-    loadMoreButton.parentElement.appendChild(loadMoreButton);
     }
 });
 
@@ -123,7 +119,6 @@ gen4.addEventListener('click',() => {
     offset = 386;
     maxRecords = 493;
     reloadPokemonItems(offset, limit);
-    loadMoreButton.parentElement.appendChild(loadMoreButton);
     }
 });
 
@@ -134,7 +129,6 @@ gen5.addEventListener('click',() => {
     offset = 493;
     maxRecords = 649;
     reloadPokemonItems(offset, limit);
-    loadMoreButton.parentElement.appendChild(loadMoreButton);
     }
 });
 
@@ -145,7 +139,6 @@ gen6.addEventListener('click',() => {
     offset = 649;
     maxRecords = 721;
     reloadPokemonItems(offset, limit);
-    loadMoreButton.parentElement.appendChild(loadMoreButton);
     }
 });
 
@@ -156,7 +149,6 @@ gen7.addEventListener('click',() => {
     offset = 721;
     maxRecords = 809;
     reloadPokemonItems(offset, limit);
-    loadMoreButton.parentElement.appendChild(loadMoreButton);
     }
 });
 
@@ -167,6 +159,5 @@ gen8.addEventListener('click',() => {
     offset = 809;
     maxRecords = 905;
     reloadPokemonItems(offset, limit);
-    loadMoreButton.parentElement.appendChild(loadMoreButton);
     }
 });
