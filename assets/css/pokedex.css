@@ -133,6 +133,24 @@
     border-radius: 1rem;
 }
 
+.generations {
+    justify-content: center;
+    align-items: center;
+}
+
+.genButtons {
+    padding: .75rem 1.5rem;
+    margin: 0.5rem;
+    color: #fff;
+    background-color: #6c69db;
+    border: none;
+    border-radius: 2rem;
+}
+
+.genButtons:hover {
+    transform: scale(1.2);
+}
+
 .pagination button:hover {
     transform: scale(1.2);
 }

@@ -19,7 +19,11 @@ function convertPokeApiDetailToPokemon(pokeDetail) {
     pokemon.types = types;
     pokemon.type = type;
 
-    pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
+    if(num < 650) {
+        pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
+    } else {
+        pokemon.photo = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${num}.png`;
+    }
 
     return pokemon;
 }
