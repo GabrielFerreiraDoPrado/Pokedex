@@ -1,8 +1,7 @@
-
-
-function convertPokemonTypesToLi(pokemonTypes) {
-    return pokemonTypes.map((typeSlot) => `<li class="type">${typeSlot.type.name}</li>`);
-}
+const pokemonList = document.getElementById('pokemonList');
+const loadMoreButton = document.getElementById('loadMoreButton');
+const limit = 12;
+let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
@@ -19,13 +18,20 @@ function convertPokemonToLi(pokemon) {
                 
             </li>
             `;
+    }
+
+function loadPokemonItems(offset, limit) {
+    
+    pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
+    
+        pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('');
+    
+    });
 }
 
-const pokemonList = document.getElementById('pokemonList');
+loadPokemonItems(offset, limit);
 
-
-pokeApi.getPokemons().then((pokemons = []) => {
-    
-    pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('');
-
+loadMoreButton.addEventListener('click', () => {
+    offset += limit;
+    loadPokemonItems(offset, limit)
 });
