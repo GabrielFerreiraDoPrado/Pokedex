@@ -24,6 +24,8 @@ Pokedex é um projeto front-end com tutoria de [Renan Johannsen de Paula](https:
 
 • HTML
 
+• Node.js
+
 • [PokeAPI](https://pokeapi.co/).
 
 • Visual Studio Code
