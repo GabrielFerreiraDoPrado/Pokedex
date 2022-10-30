@@ -8,7 +8,6 @@ const gen5 = document.getElementById('gen5');
 const gen6 = document.getElementById('gen6');
 const gen7 = document.getElementById('gen7');
 const gen8 = document.getElementById('gen8');
-let isButtonAlive = true;
 
 const limit = 12;
 let offset = 0;
@@ -29,7 +28,7 @@ function setButtonsDefaultColor() {
 
 function convertPokemonToLi(pokemon) {
     return `
-            <li class="pokemon ${pokemon.type}">
+            <li class="pokemon ${pokemon.type} ${pokemon.name}">
                 <span class="number">#${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span>
                 <div class="detail">
