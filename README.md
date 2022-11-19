@@ -39,4 +39,4 @@ Pokedex é um projeto front-end com tutoria de [Renan Johannsen de Paula](https:
 
 # Autor
 
-[Meu Perfil](https://www.linkedin.com/in/gabriel-ferreira-do-prado-25863919a/) no LinkedIn
+[Meu Perfil](https://www.linkedin.com/in/gabriel-ferreira-do-prado/) no LinkedIn
