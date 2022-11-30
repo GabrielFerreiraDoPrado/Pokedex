@@ -3,7 +3,7 @@
 
 # Sobre o Projeto
 
-Pokedex é um projeto front-end com tutoria de [Renan Johannsen de Paula](https://www.linkedin.com/in/renanjpaula/) durante o Cloud Fullstack Bootcamp, desenvolvido pela [Digital Innovation One](https://www.dio.me/). Na listagem é possível ver os Pokémons a partir de sua respectiva geração, é listado o nome, número, tipos e também uma foto de cada um deles.
+Pokedex é um projeto front-end com tutoria de [Renan Johannsen de Paula](https://www.linkedin.com/in/renanjpaula/) feito durante o Cloud Fullstack Bootcamp, desenvolvido pela [Digital Innovation One](https://www.dio.me/). Na listagem é possível ver os Pokémons a partir de sua respectiva geração, é listado o nome, número, tipos e também uma foto de cada um deles.
 
 ## Objetivos
  
